@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQse6Xs6Ny6pQx2E9z8CI+RrGunC2E91H5noizuVmzR35WOON0zfnBx+NcHVgvnGUvs/BhPAq/zZz2D8YCB99w==",
+  "dgSpecHash": "DeaILYUzzG02sl1g8wUrUekF9j/LTkN6GFnvXPajHeR5SkJGtu9ysFlSMBsia8N/YpIPEvvWlZVAnGaAVZQOqA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ertur\\source\\youtube\\microservices\\PlatformService\\PlatformService.csproj",
+  "projectFilePath": "C:\\Users\\ertur\\source\\youtube\\net5_microservices\\PlatformService\\PlatformService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ertur\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\ertur\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

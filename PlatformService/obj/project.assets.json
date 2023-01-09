@@ -6357,11 +6357,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ertur\\source\\youtube\\microservices\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "C:\\Users\\ertur\\source\\youtube\\net5_microservices\\PlatformService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "c:\\Users\\ertur\\source\\youtube\\microservices\\PlatformService\\PlatformService.csproj",
+      "projectPath": "C:\\Users\\ertur\\source\\youtube\\net5_microservices\\PlatformService\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\ertur\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ertur\\source\\youtube\\microservices\\PlatformService\\obj\\",
+      "outputPath": "C:\\Users\\ertur\\source\\youtube\\net5_microservices\\PlatformService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",

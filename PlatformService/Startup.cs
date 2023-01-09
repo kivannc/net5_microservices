@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,8 +23,8 @@ namespace PlatformService
     {
       services.AddDbContext<AppDbContext>(opt =>
         opt.UseInMemoryDatabase("InMem"));
-
       services.AddScoped<IPlatformRepo, PlatformRepo>();
+      services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
       services.AddControllers();
       services.AddSwaggerGen(c =>
@@ -38,7 +39,11 @@ namespace PlatformService
       {
         app.UseDeveloperExceptionPage();
         app.UseSwagger();
-        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PlatformService v1"));
+        app.UseSwaggerUI(c =>
+        {
+          c.SwaggerEndpoint("/swagger/v1/swagger.json", "PlatformService v1");
+          c.RoutePrefix = string.Empty;
+        });
       }
 
       app.UseHttpsRedirection();

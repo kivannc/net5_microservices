@@ -8,7 +8,7 @@ spec:
     matchLabels:
       app: platformservice
   template:
-    metedata:
+    metadata:
       labels:
         app: platformservice
     spec:

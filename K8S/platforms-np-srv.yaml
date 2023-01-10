@@ -7,7 +7,6 @@ spec:
   selector:
     app: platformservice
   ports:
-    - name: platformservice
-      protocol: TCP
+    - protocol: TCP
       port: 80
       targetPort: 80

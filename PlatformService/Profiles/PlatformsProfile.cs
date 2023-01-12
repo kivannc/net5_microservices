@@ -3,13 +3,14 @@ using PlatformService.Models;
 
 namespace PlatformService.Profile
 {
-  public class PlatformsProfile : AutoMapper.Profile
-  {
-    public PlatformsProfile()
+    public class PlatformsProfile : AutoMapper.Profile
     {
-      // Source => Target
-      CreateMap<Platform, PlatformReadDto>();
-      CreateMap<PlatformCreateDto, Platform>();
+        public PlatformsProfile()
+        {
+            // Source => Target
+            CreateMap<Platform, PlatformReadDto>();
+            CreateMap<PlatformCreateDto, Platform>();
+            CreateMap<PlatformReadDto, PlatformPublishedDto>();
+        }
     }
-  }
 }

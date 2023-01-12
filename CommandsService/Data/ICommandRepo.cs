@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CommandService.Models;
+using CommandsService.Models;
 
-namespace CommandService.Data
+namespace CommandsService.Data
 {
     public interface ICommandRepo
     {

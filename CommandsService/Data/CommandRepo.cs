@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CommandService.Data;
-using CommandService.Models;
+using CommandsService.Data;
+using CommandsService.Models;
 
 
-namespace CommandService.Data
+namespace CommandsService.Data
 {
     public class CommandRepo : ICommandRepo
     {

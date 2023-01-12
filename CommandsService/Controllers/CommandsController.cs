@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CommandService.Data;
+using CommandsService.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace  CommandService.Controllers
+namespace CommandsService.Controllers
 {
     [ApiController]
     [Route("api/c/[controller]")]
@@ -17,6 +17,6 @@ namespace  CommandService.Controllers
         {
             _repository = repository;
         }
-        
+
     }
 }

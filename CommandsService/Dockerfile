@@ -13,4 +13,4 @@ WORKDIR /app
 
 COPY --from=build /app/out .
 
-ENTRYPOINT ["dotnet", "CommandService.dll"]
+ENTRYPOINT ["dotnet", "CommandsService.dll"]

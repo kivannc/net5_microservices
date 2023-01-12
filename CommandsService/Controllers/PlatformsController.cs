@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using CommandService.Data;
-using CommandService.Dtos;
+using CommandsService.Data;
+using CommandsService.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CommandService.Controllers
+namespace CommandsService.Controllers
 {
     [ApiController]
     [Route("api/c/[controller]")]

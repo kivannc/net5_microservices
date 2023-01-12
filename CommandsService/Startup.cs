@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CommandService.Data;
+using CommandsService.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,7 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace CommandService
+namespace CommandsService
 {
     public class Startup
     {
@@ -33,7 +33,7 @@ namespace CommandService
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CommandService", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CommandsService", Version = "v1" });
             });
         }
 
@@ -45,7 +45,7 @@ namespace CommandService
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CommandService v1");
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CommandsService v1");
                     c.RoutePrefix = string.Empty;
                 });
             }

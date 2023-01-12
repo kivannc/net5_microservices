@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   name: mssql-depl
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: mssql
-  replicas: 1
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mssql
-          image: mcr.microsoft.com/mssql/server:2019-latest
+          image: mcr.microsoft.com/mssql/server:2017-latest
           ports:
             - containerPort: 1433
           env:
@@ -28,12 +28,12 @@ spec:
                   name: mssql
                   key: SA_PASSWORD
           volumeMounts:
-            - name: mssqldb
-              mountPath: /var/opt/mssql/data
-    volumes:
-      - name: mssqldb
-        persistentVolumeClaim:
-          claimName: mssql-claim
+            - mountPath: /var/opt/mssql/data
+              name: mssqldb
+      volumes:
+        - name: mssqldb
+          persistentVolumeClaim:
+            claimName: mssql-claim
 ---
 apiVersion: v1
 kind: Service

@@ -23,6 +23,8 @@ namespace CommandsService.AsyncDataServices
         {
             _configuration = configuration;
             _eventProcessor = eventProcessor;
+
+            InitializeRabbitMQ();
         }
 
         private void InitializeRabbitMQ()
